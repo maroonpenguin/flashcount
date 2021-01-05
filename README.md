@@ -1,27 +1,21 @@
-# Flashcount
+# フラッシュ暗算のできるウェブアプリです。
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.5.
+## [ポートフォリオ](https://flashcount.app)
 
-## Development server
+## 遊び方
+桁、行、速さを選択し、「開始」を押して始まります。<br>
+３、２、１のカウントダウンの後に、ランダムの数字が何度か表示されるので暗算で足していきます。<br>
+フォームへ合計値を入力し、「答える」を押します。もう一度「解き直す」こともできます。<br>
+正解か不正解か表示されます。違う問題へ行くには「次の問題」を押します。<br>
+わからない時は「答えは」を押せば正解が表示されます。<br>
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## 使っている技術
+- Angular, TypeScript, HTML, SCSS
 
-## Code scaffolding
+## システム構成
+- Route53 + cloudfront + EC2
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## こだわったポイント
+- appドメインを使い、セキュリティを強化しました。
+- 難易度を増やしました。
+- 暗算の妨げにならないようになるべくシンプルにしました。
