@@ -1,0 +1,40 @@
+<!-- 合計の入力フォーム -->
+<div class="game-result-container">
+	<div class="resulting" *ngIf="resultWait == 'none' else isResult">
+		<div class="result-container">
+			<mat-form-field class="result-form" appearance="fill">
+				<mat-label>合計を入力してください</mat-label>
+				<input type="number" matInput id="KeyId" key="KeyId" [(ngModel)]="key" min="1" placeholder="半角数字" required>
+			</mat-form-field>
+			<div class="result-button">
+				<button mat-raised-button (click)="resultButton()">
+					答える
+				</button>
+			</div>
+			<!-- 同じ問題を解き直す -->
+			<div>
+				<button mat-raised-button (click)="gameagain()">解き直す</button>
+			</div>
+		</div>
+		<!-- フォームのバリデーション -->
+		<p class="remsg">{{message}}</p>
+	</div>
+</div>
+
+<ng-template #isResult class="game-result-container">
+	<!-- 結果発表 -->
+	<h2>{{this.showResult}}</h2>
+	<!-- 同じ問題を解き直す -->
+	<div>
+		<button mat-raised-button (click)="gameagain()">解き直す</button>
+	</div>
+	<!-- 次の問題へ -->
+	<div>
+		<button mat-raised-button (click)="nextgame()">次の問題</button>
+	</div>
+	<!-- 正解を表示する -->
+	<div>
+		<button mat-raised-button (click)="addAll()">正解は</button>
+	</div>
+	<div class="showAll">{{this.showAll}}</div>
+</ng-template>

@@ -1,0 +1,144 @@
+<div class="container" *ngIf="countWait === true; else gameplay">
+<!-- カウントダウン -->
+	<div class="count">
+		<p>3</p>
+		<p>2</p>
+		<p>1</p>
+	</div>
+</div>
+
+<ng-template #gameplay>
+	<!-- 速さ別に配列の中を表示 -->
+	<div [ngSwitch]="isSpeed" class="container">
+		<!-- １のとき -->
+		<div *ngSwitchCase="1">
+			<div class="speed1">
+				<p>{{this.isNum[0]}}</p>
+				<p>{{this.isNum[1]}}</p>
+				<p>{{this.isNum[2]}}</p>
+				<p>{{this.isNum[3]}}</p>
+				<p>{{this.isNum[4]}}</p>
+				<p>{{this.isNum[5]}}</p>
+				<p>{{this.isNum[6]}}</p>
+				<p>{{this.isNum[7]}}</p>
+				<p>{{this.isNum[8]}}</p>
+				<p>{{this.isNum[9]}}</p>
+				<p>{{this.isNum[10]}}</p>
+				<p>{{this.isNum[11]}}</p>
+				<p>{{this.isNum[12]}}</p>
+				<p>{{this.isNum[13]}}</p>
+				<p>{{this.isNum[14]}}</p>
+				<p>{{this.isNum[15]}}</p>
+				<p>{{this.isNum[16]}}</p>
+				<p>{{this.isNum[17]}}</p>
+				<p>{{this.isNum[18]}}</p>
+				<p>{{this.isNum[19]}}</p>
+			</div>
+		</div>
+
+		<!-- ２のとき -->
+		<div *ngSwitchCase="2">
+			<div class="speed2">
+				<p>{{this.isNum[0]}}</p>
+				<p>{{this.isNum[1]}}</p>
+				<p>{{this.isNum[2]}}</p>
+				<p>{{this.isNum[3]}}</p>
+				<p>{{this.isNum[4]}}</p>
+				<p>{{this.isNum[5]}}</p>
+				<p>{{this.isNum[6]}}</p>
+				<p>{{this.isNum[7]}}</p>
+				<p>{{this.isNum[8]}}</p>
+				<p>{{this.isNum[9]}}</p>
+				<p>{{this.isNum[10]}}</p>
+				<p>{{this.isNum[11]}}</p>
+				<p>{{this.isNum[12]}}</p>
+				<p>{{this.isNum[13]}}</p>
+				<p>{{this.isNum[14]}}</p>
+				<p>{{this.isNum[15]}}</p>
+				<p>{{this.isNum[16]}}</p>
+				<p>{{this.isNum[17]}}</p>
+				<p>{{this.isNum[18]}}</p>
+				<p>{{this.isNum[19]}}</p>
+			</div>
+		</div>
+
+		<!-- ３のとき -->
+		<div *ngSwitchCase="3">
+			<div class="speed3">
+				<p>{{this.isNum[0]}}</p>
+				<p>{{this.isNum[1]}}</p>
+				<p>{{this.isNum[2]}}</p>
+				<p>{{this.isNum[3]}}</p>
+				<p>{{this.isNum[4]}}</p>
+				<p>{{this.isNum[5]}}</p>
+				<p>{{this.isNum[6]}}</p>
+				<p>{{this.isNum[7]}}</p>
+				<p>{{this.isNum[8]}}</p>
+				<p>{{this.isNum[9]}}</p>
+				<p>{{this.isNum[10]}}</p>
+				<p>{{this.isNum[11]}}</p>
+				<p>{{this.isNum[12]}}</p>
+				<p>{{this.isNum[13]}}</p>
+				<p>{{this.isNum[14]}}</p>
+				<p>{{this.isNum[15]}}</p>
+				<p>{{this.isNum[16]}}</p>
+				<p>{{this.isNum[17]}}</p>
+				<p>{{this.isNum[18]}}</p>
+				<p>{{this.isNum[19]}}</p>
+			</div>
+		</div>
+
+		<!-- ４のとき -->
+		<div *ngSwitchCase="4">
+			<div class="speed4">
+				<p>{{this.isNum[0]}}</p>
+				<p>{{this.isNum[1]}}</p>
+				<p>{{this.isNum[2]}}</p>
+				<p>{{this.isNum[3]}}</p>
+				<p>{{this.isNum[4]}}</p>
+				<p>{{this.isNum[5]}}</p>
+				<p>{{this.isNum[6]}}</p>
+				<p>{{this.isNum[7]}}</p>
+				<p>{{this.isNum[8]}}</p>
+				<p>{{this.isNum[9]}}</p>
+				<p>{{this.isNum[10]}}</p>
+				<p>{{this.isNum[11]}}</p>
+				<p>{{this.isNum[12]}}</p>
+				<p>{{this.isNum[13]}}</p>
+				<p>{{this.isNum[14]}}</p>
+				<p>{{this.isNum[15]}}</p>
+				<p>{{this.isNum[16]}}</p>
+				<p>{{this.isNum[17]}}</p>
+				<p>{{this.isNum[18]}}</p>
+				<p>{{this.isNum[19]}}</p>
+			</div>
+		</div>
+
+		<!-- 5のとき -->
+		<div *ngSwitchCase="5">
+			<div class="speed5">
+				<p>{{this.isNum[0]}}</p>
+				<p>{{this.isNum[1]}}</p>
+				<p>{{this.isNum[2]}}</p>
+				<p>{{this.isNum[3]}}</p>
+				<p>{{this.isNum[4]}}</p>
+				<p>{{this.isNum[5]}}</p>
+				<p>{{this.isNum[6]}}</p>
+				<p>{{this.isNum[7]}}</p>
+				<p>{{this.isNum[8]}}</p>
+				<p>{{this.isNum[9]}}</p>
+				<p>{{this.isNum[10]}}</p>
+				<p>{{this.isNum[11]}}</p>
+				<p>{{this.isNum[12]}}</p>
+				<p>{{this.isNum[13]}}</p>
+				<p>{{this.isNum[14]}}</p>
+				<p>{{this.isNum[15]}}</p>
+				<p>{{this.isNum[16]}}</p>
+				<p>{{this.isNum[17]}}</p>
+				<p>{{this.isNum[18]}}</p>
+				<p>{{this.isNum[19]}}</p>
+			</div>
+		</div>
+
+	</div>
+</ng-template>
