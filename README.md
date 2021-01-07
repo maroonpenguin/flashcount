@@ -13,7 +13,7 @@
 - Angular, TypeScript, HTML, SCSS
 
 ## システム構成
-- Route53 + cloudfront + EC2
+- Route53 + aws amplify
 
 ## こだわったポイント
 - appドメインを使い、セキュリティを強化しました。
